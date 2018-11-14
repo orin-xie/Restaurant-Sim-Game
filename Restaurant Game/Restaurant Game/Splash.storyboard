@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aPX-cn-Cb5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="Rx2-Na-bsT">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" id="aPX-cn-Cb5" customClass="SplashViewController" customModule="Restaurant_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x4t-Dk-tmb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YtH-u9-Tto">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wood_background" translatesAutoresizingMaskIntoConstraints="NO" id="H5V-UH-Zip">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fjm-mx-yf2">
+                                        <rect key="frame" x="50" y="133" width="274" height="150.5"/>
+                                        <string key="text">Welcome! You're the proud owner of a brand new restaurant! You begin each day deciding which and how many menu items to make. You have one week to make as much money as possible, good luck!</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAr-tS-iv8">
+                                        <rect key="frame" x="147" y="341.5" width="80" height="55"/>
+                                        <color key="backgroundColor" red="0.68737183550000003" green="0.50860054895449913" blue="0.41816250775345815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="5Fy-ZE-QHU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Dismiss">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapDismiss:" destination="aPX-cn-Cb5" eventType="touchUpInside" id="bmI-c3-9IK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Fjm-mx-yf2" firstAttribute="top" secondItem="YtH-u9-Tto" secondAttribute="top" constant="133" id="1BC-LN-cJv"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fjm-mx-yf2" secondAttribute="trailing" constant="51" id="2je-XE-4IA"/>
+                                    <constraint firstItem="xAr-tS-iv8" firstAttribute="leading" secondItem="YtH-u9-Tto" secondAttribute="leading" constant="147" id="5u9-P2-Omx"/>
+                                    <constraint firstAttribute="trailing" secondItem="H5V-UH-Zip" secondAttribute="trailing" id="MNK-Uk-3jc"/>
+                                    <constraint firstItem="xAr-tS-iv8" firstAttribute="top" secondItem="Fjm-mx-yf2" secondAttribute="bottom" constant="58" id="Nv8-0f-ths"/>
+                                    <constraint firstItem="H5V-UH-Zip" firstAttribute="top" secondItem="YtH-u9-Tto" secondAttribute="top" id="Tc9-30-tuC"/>
+                                    <constraint firstAttribute="trailing" secondItem="xAr-tS-iv8" secondAttribute="trailing" constant="148" id="fjW-hE-6D8"/>
+                                    <constraint firstItem="H5V-UH-Zip" firstAttribute="leading" secondItem="YtH-u9-Tto" secondAttribute="leading" id="gaO-XD-PTq"/>
+                                    <constraint firstItem="Fjm-mx-yf2" firstAttribute="leading" secondItem="YtH-u9-Tto" secondAttribute="leading" constant="50" id="qFV-P5-11Q"/>
+                                    <constraint firstAttribute="bottom" secondItem="H5V-UH-Zip" secondAttribute="bottom" id="rHb-Qa-dPI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YtH-u9-Tto" firstAttribute="top" secondItem="x4t-Dk-tmb" secondAttribute="top" id="761-Op-wzL"/>
+                            <constraint firstItem="YtH-u9-Tto" firstAttribute="trailing" secondItem="CFa-Qk-qj8" secondAttribute="trailing" id="kKA-Gg-Yyp"/>
+                            <constraint firstItem="YtH-u9-Tto" firstAttribute="leading" secondItem="CFa-Qk-qj8" secondAttribute="leading" id="kVW-8n-bDg"/>
+                            <constraint firstItem="YtH-u9-Tto" firstAttribute="bottom" secondItem="CFa-Qk-qj8" secondAttribute="bottom" id="nue-Nf-RdX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CFa-Qk-qj8"/>
+                    </view>
+                    <connections>
+                        <outlet property="dismissButton" destination="xAr-tS-iv8" id="tUy-wE-HIo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="58P-PF-aM5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="175.19999999999999" y="-171.36431784107947"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="wood_background" width="9001" height="5626"/>
+    </resources>
+</document>
